@@ -1,0 +1,242 @@
+.game_over {
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+
+  font-size: 2rem;
+  background: url(../png/button_blue.png) center/100% 100%;
+  transition: 1s ease left;
+
+  width: 365px;
+  height: 180px;
+}
+
+.outcome {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+
+  width: 50%;
+}
+
+.link {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+
+  width: 117px;
+  height: 79px;
+
+  background: url(../png/button_red.png) center/100% 100%;
+}
+
+.win_div {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+
+  width: 511px;
+  height: 154px;
+
+  background: url(../png/win_pic.png) center/100% 100%;
+}
+
+.win_div_text {
+  margin-top: 20px;
+}
+
+.side {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 20%;
+  height: 100%;
+
+  background: lightgray;
+}
+
+.arrow_cont {
+  position: relative;
+  width: 126px;
+  height: 126px;
+}
+
+.arrow {
+  width: 42px;
+  height: 42px;
+  background: url(../png/arrow.png) center/100% 100%;
+  touch-action: manipulation;
+}
+
+.arrow.up {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 23px);
+  transform: rotate(-90deg);
+}
+
+.arrow.down {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 23px);
+  transform: rotate(90deg);
+}
+
+.arrow.left {
+  position: absolute;
+  bottom: calc(50% - 23px);
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.arrow.right {
+  position: absolute;
+  bottom: calc(50% - 23px);
+  right: 0;
+}
+
+.progress_cont {
+  width: 101px;
+  height: 39px;
+
+  background: url(../png/button_purple.png) center/100% 100%;
+}
+
+.progress_cont img {
+  max-height: 80%;
+}
+
+.progress {
+  width: 50%;
+}
+
+.level {
+  width: 101px;
+  height: 39px;
+
+  background: url(../png/button_blue.png) center/100% 100%;
+}
+
+.home {
+  position: absolute;
+  top: 2%;
+  left: 1%;
+
+  width: 9%;
+  height: 9%;
+
+  transform-origin: top left;
+  background: url(../png/button_red.png) center/100% 100%;
+}
+
+.field {
+  position: absolute;
+  left: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  height: 320px;
+  width: 520px;
+
+  border: 2px solid black;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+}
+
+.snake {
+  background: linear-gradient(180deg, #5a2727 0%, #e20000 100%);
+  border-radius: 50%;
+}
+
+.currency {
+  background: url(../png/currency.png) center/100% 100%;
+}
+
+.food_1,
+.food_6 {
+  background: url(../png/food_1.png) center/100% 100%;
+}
+
+.food_2 {
+  background: url(../png/food_2.png) center/100% 100%;
+}
+
+.food_3 {
+  background: url(../png/food_3.png) center/100% 100%;
+}
+
+.food_4 {
+  background: url(../png/food_4.png) center/100% 100%;
+}
+
+.food_5 {
+  background: url(../png/food_5.png) center/100% 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .field {
+    transform: translateY(-50%) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .field {
+    left: 0;
+  }
+
+  .side div {
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .field {
+    transform: translateY(-50%) scale(0.6);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .side div {
+    transform: scale(1.2);
+  }
+
+  .field {
+    transform: translateY(-50%) scale(1.3);
+  }
+
+  .game_over {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .side div {
+    transform: scale(1.5);
+  }
+
+  .game_over {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  .field {
+    transform: translateY(-50%) scale(1.5);
+    left: 25%;
+  }
+}

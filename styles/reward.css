@@ -1,0 +1,109 @@
+.home {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+
+  width: 101px;
+  height: 39px;
+
+  background: url(../png/button_red.png) center/100% 100%;
+}
+
+.balance_field {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.snake {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  max-width: 30%;
+}
+
+.reward_cont {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 533px;
+  height: 233px;
+
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 41px;
+
+  transform-origin: right;
+}
+
+.reward {
+  display: flex;
+  justify-content: space-between;
+
+  width: 80%;
+  height: 29px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right img {
+  max-height: 90%;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.button {
+  font-size: 0.75rem;
+
+  width: 59px;
+  height: 29px;
+}
+
+.pick_up {
+  background: url(../png/button_blue.png) center/100% 100%;
+}
+
+.did_it {
+  background: url(../png/button_purple.png) center/100% 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .reward_cont {
+    transform: translateY(-50%) scale(0.8);
+    right: 2%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .reward_cont {
+    transform: translateY(-50%) scale(1.3);
+  }
+
+  .balance_field,
+  .home {
+    transform-origin: top left;
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reward_cont {
+    transform: translateY(-50%) scale(1.5);
+  }
+
+  .balance_field,
+  .home {
+    transform: scale(1.5);
+  }
+}

@@ -1,0 +1,94 @@
+.balance_field {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+
+  transform-origin: left top;
+}
+
+.shop {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+
+  width: 75px;
+  height: 75px;
+
+  transform-origin: top left;
+  background: url(../png/button_yellow.png) center/100% 100%;
+}
+
+.shop img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.snake {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  transform-origin: bottom left;
+
+  max-width: 30%;
+}
+
+.level_cont {
+  position: absolute;
+  right: 2%;
+  top: 7%;
+
+  width: 400px;
+  height: 260px;
+
+  transform-origin: top right;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.level {
+  width: 111px;
+  height: 110px;
+
+  font-size: 2.5rem;
+  background: url(../png/button_yellow.png) center/100% 100%;
+}
+
+.disabled {
+  filter: grayscale(1);
+}
+
+.reward {
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+
+  transform-origin: bottom right;
+
+  width: 138px;
+  height: 53px;
+
+  background: url(../png/button_purple.png) center/100% 100%;
+}
+
+@media screen and (min-width: 960px) {
+  .balance_field,
+  .snake,
+  .reward,
+  .level_cont,
+  .shop {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .balance_field,
+  .reward,
+  .level_cont,
+  .shop {
+    transform: scale(1.5);
+  }
+}

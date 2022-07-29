@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "JotiOne";
+  src: url("../fonts/JotiOne-Regular.ttf");
+}
+
+body {
+  height: 100vh;
+  min-height: 360px;
+  background: forestgreen;
+
+  font-family: "JotiOne";
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.balance_field {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 101px;
+  height: 39px;
+
+  background: url(../png/button_purple.png) center/100% 100%;
+}
+
+.balance_field img {
+  position: absolute;
+  left: -10%;
+  top: -10%;
+
+  max-height: 120%;
+}
+
+.balance {
+  margin-right: 8px;
+  width: 57%;
+}

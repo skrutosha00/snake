@@ -1,0 +1,37 @@
+body {
+  background: url(../png/back_1.png) center/100% 100%;
+}
+
+.wrapper {
+  backdrop-filter: brightness(0.6);
+  -webkit-backdrop-filter: brightness(0.6);
+}
+
+.header {
+  margin: 20px auto;
+  font-size: 2rem;
+}
+
+.text {
+  width: 90%;
+  height: 50%;
+  margin: 20px;
+
+  font-weight: 400;
+  text-align: left;
+
+  overflow: scroll;
+}
+
+.button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 20%;
+  height: 15%;
+  max-height: 75px;
+
+  background: url(../png/button_purple.png) center/100% 100%;
+}
