@@ -18,11 +18,16 @@ function animate(selector) {
   }
 }
 
-function setBalanceField() {
+function setBalanceField(index = false) {
   let balanceField = document.querySelector(".balance_field");
 
   let currency = document.createElement("img");
   currency.src = "../png/currency.png";
+
+  if (index) {
+    currency.src = "./png/currency.png";
+  }
+
   balanceField.appendChild(currency);
 
   let balance = document.createElement("div");

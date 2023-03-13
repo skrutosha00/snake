@@ -24,7 +24,7 @@ if (!localStorage.getItem("rewards_snake")) {
   localStorage.setItem("rewards_snake", []);
 }
 
-setBalanceField();
+setBalanceField(true);
 
 document.querySelector(".wrapper").style.background =
   "url(./png/back_" +
